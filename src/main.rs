@@ -1,6 +1,9 @@
 #[macro_use]
 extern crate rocket;
 
+use rocket::routes;
+use routes::index::*;
+
 mod routes {
     pub mod index;
 }
@@ -9,11 +12,11 @@ mod routes {
 fn rocket() -> _ {
     rocket::build()
         .mount("/", routes![
-            routes::index::index, 
-            routes::index::music,
-            routes::index::games, 
-            routes::index::about
+            index, 
+            music,
+            games, 
+            about
         ])
-        .mount("/music", routes![routes::index::film])
-        .register("/", catchers![routes::index::not_found])
+        .mount("/music", routes![film])
+        .register("/", catchers![not_found])
 }
