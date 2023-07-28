@@ -21,7 +21,6 @@
 ## Usage
 
 ## Credits
-* [Inquirer.js](https://www.npmjs.com/package/inquirer)
 
 ## Contact Information
 <p align="center">
