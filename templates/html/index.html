@@ -7,150 +7,198 @@
 
 	<link rel="stylesheet" href="./reset.css">
 	<style>
-		/* Add some basic styling to the table */
-		table {
-			width: 700px;
+		#main {
 			min-height: 100vh;
-			border-collapse: collapse;
 		}
 
+		tr,
 		th,
 		td {
-			padding: 8px;
 			border: 1px solid #ccc;
 			vertical-align: top;
 		}
 
-		@font-face {
-			font-family: 'MS PGothic';
-			src: url('../../src/fonts/MS\ PGothic.ttf') format('truetype');
-		}
-
-		@font-face {
-			font-family: 'Univers Extra Black';
-			src: url('../../src/fonts/Univers\ Extra\ Black.otf') format('opentype');
-		}
-
-		@font-face {
-			font-family: 'Univers Condensed';
-			src: url('../../src/fonts/Univers\ Condensed.otf') format('opentype');
-		}
-
-		@font-face {
-			font-family: 'Roboto Bold';
-			src: url('../../src/fonts/Roboto\ Bold.ttf') format('truetype');
-		}
-
-		@font-face {
-			font-family: 'Template Gothic Bold';
-			src: url('../../src/fonts/Template\ Gothic\ Bold.ttf') format('truetype');
-		}
-
-		@font-face {
-			font-family: 'CabourgLight Regular';
-			src: url('../../src/fonts/CabourgLight\ Regular.ttf') format('truetype');
-		}
-
-		html {
-			margin: 0;
-			padding: 0;
-		}
-
 		body {
-			font-family: "MS PGothic", monospace;
 			display: flex;
 			flex-direction: column;
-
 			align-items: center;
-		}
-
-		th {
-			font-family: "Univers Extra Black", monospace;
-		}
-
-		h1 {
-			font-family: "Univers Condensed", monospace;
-		}
-
-		h3 {
-			font-family: "Template Gothic Bold", monospace;
 		}
 	</style>
 
 </head>
 
 <body>
-	<table>
+	<table id="main" width="700px">
 		<!-- Header -->
 		<tr>
-			<th colspan="2">cwchilvers.io</th>
+			<td colspan="2" height="100px">
+				<table height="100px">
+					<!-- Logo -->
+					<td width="500px">
+						<h1>cwchilvers.io</h1>
+					</td>
+
+					<!-- Featured -->
+					<td width="200px">
+						<table width="200px">
+							<tr>
+								<th>Latest Music Work</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="https://open.spotify.com/track/7dIn5DzOgYrwBdQVoqh79o?si=8e506d037a49447d">
+										"Ocean Skies"<br> by Atara Ara<br> (Producer)
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</table>
+			</td>
 		</tr>
+
+		<!-- Body -->
 		<tr>
 			<!-- Sidebar -->
-			<td>
-				<!-- Navigation -->
-				<div id="nav">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/music">Music</a></li>
-						<li><a href="/games">Games</a></li>
-						<li><a href="/archive">Archive</a></li>
-					</ul>
-				</div>
+			<td width="120px">
+				<!-- Site Menu -->
+				<table width="120px">
+					<tr height="20px">
+						<th>Site Menu</th>
+					</tr>
+					<tr height="15px">
+						<td><a>Home</a></td>
+					</tr>
+					<tr height="15px">
+						<td><a>Music</a></td>
+					</tr>
+					<tr height="15px">
+						<td><a>Games</a></td>
+					</tr>
+					<tr height="15px">
+						<td><a>Archive</a></td>
+					</tr>
+				</table>
 
 				<!-- Links -->
-				<div id="links">
-					<h3>Links</h3>
-					<ul>
-						<li>
-							<a href="https://github.com/cwchilvers"><img src="./github-button.jpeg" alt="GitHub"></a>
-						</li>
-						<li>
+				<table width="120px">
+					<tr height="20px">
+						<th>Links</th>
+					</tr>
+					<tr height="15px">
+						<td>
+							<a href="https://github.com/cwchilvers">
+								<img src="./github-button.jpeg" alt="GitHub">
+							</a>
+						</td>
+					</tr>
+					<tr height="15px">
+						<td>
 							<a href="https://chandlerchilvers.bandcamp.com/">
 								<img src="./bandcamp-button.jpeg" alt="Bandcamp">
 							</a>
-						</li>
-					</ul>
-				</div>
+						</td>
+					</tr>
+				</table>
 
 				<!-- Contact -->
-				<div id="contact">
-					<h3>Contact</h3>
-					<ul>
-						<li><a href="mailto:cwchilvers@gmail.com">Email</a>
-					</ul>
-				</div>
+				<table width="120px">
+					<tr height="20px">
+						<th>Contact</th>
+					</tr>
+					<tr height="15px">
+						<td>
+							<a href="mailto: cwchilvers@gmail.com">
+								<img src="./email-button.jpeg" alt="Email">
+							</a>
+						</td>
+					</tr>
+				</table>
 
 				<!-- Visitors -->
-				<div id="visitors">
-					<h3>Visitors</h3>
-					<p>0</p>
-				</div>
+				<table width="120px">
+					<tr height="20px">
+						<th>Visitors</th>
+					</tr>
+					<tr height="15px">
+						<td>Today: 0</td>
+					</tr>
+					<tr height="15px">
+						<td>Total: 0</td>
+					</tr>
+				</table>
 
+				<!-- Cool Sites -->
+				<table width="120px">
+					<tr height="20px">
+						<th>Cool Sites</th>
+					</tr>
+					<tr height="15px">
+						<td>
+							<a href="">
+								Click me!
+							</a>
+						</td>
+					</tr>
+				</table>
 			</td>
 
 			<!-- Main -->
 			<td>
-				<div id="welcome">
-					<h1>Welcome to cwchilvers.io</h1>
-					<p>This is the main content of the website. Blah, blah, blah...</p>
-				</div>
-				<div id="latest">
-					<h2>Latest</h2>
-					<p>Here is the latest content on the website. Blah, blah, blah...</p>
-				</div>
+				<!-- Home -->
+				<table>
+					<tr height="60px">
+						<th>Home</th>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								askj akldfh lakdjfskdfsjhlk adsjfaksdfhlasdfkdf
+								asdfa daslkdfh slkad fsjhalkdfs jhalsfdkhdfs adskhdfslkf
+							</p>
+						</td>
+					</tr>
+				</table>
 
-				<iframe width="314" height="321" scrolling="no"
-					src="https://gifypet.neocities.org/pet/pet.html?name=Bean&dob=1691045325&gender=m&element=Air&pet=cat.gif&map=tree.jpg&background=pink.gif&tablecolor=black&textcolor=black"
-					frameborder="0"></iframe>
+				<!-- Latest -->
+				<table height="632px">
+					<td>
+						<table width="400px">
+							<tr height="40px">
+								<th>Latest</th>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										askj akldfh lakdjfskdfsjhlk adsjfaksdfhlasdfkdf
+										asdfa daslkdfh slkad fsjhalkdfs jhalsfdkhdfs adskhdfslkf
+									</p>
+								</td>
+							</tr>
+						</table>
+
+					</td>
+					<td>
+						<table width="160px">
+							<tr>
+								<th>Latest Music Work</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="https://open.spotify.com/track/7dIn5DzOgYrwBdQVoqh79o?si=8e506d037a49447d">
+										"Ocean Skies"<br> by Atara Ara<br> (Producer)
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</table>
 			</td>
 		</tr>
 
 		<!-- Footer -->
 		<tr>
-			<td colspan="2">
-				<p>&copy; 2023 Chandler Chilvers</p>
-			</td>
+			<th colspan="2" height="60px">©2023 cwchilvers.io</th>
 		</tr>
 	</table>
 </body>
