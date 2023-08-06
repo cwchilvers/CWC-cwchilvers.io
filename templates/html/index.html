@@ -1,25 +1,158 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<title>Chandler Chilvers</title>
-	</head>
 
-	<body>
-		<header>
-			<h1>Chandler Chilvers</h1>
-		</header>
+<head>
+	<meta charset="utf-8">
+	<title>cwchilvers.io</title>
 
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/music">Music</a></li>
-				<li><a href="/games">Games</a></li>
-				<li><a href="/about">About</a></li>
-			</ul>
-		</nav>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+		/* Add some basic styling to the table */
+		table {
+			width: 700px;
+			min-height: 100vh;
+			border-collapse: collapse;
+		}
 
-		<main>
-		</main>
-	</body>
+		th,
+		td {
+			padding: 8px;
+			border: 1px solid #ccc;
+			vertical-align: top;
+		}
+
+		@font-face {
+			font-family: 'MS PGothic';
+			src: url('../../src/fonts/MS\ PGothic.ttf') format('truetype');
+		}
+
+		@font-face {
+			font-family: 'Univers Extra Black';
+			src: url('../../src/fonts/Univers\ Extra\ Black.otf') format('opentype');
+		}
+
+		@font-face {
+			font-family: 'Univers Condensed';
+			src: url('../../src/fonts/Univers\ Condensed.otf') format('opentype');
+		}
+
+		@font-face {
+			font-family: 'Roboto Bold';
+			src: url('../../src/fonts/Roboto\ Bold.ttf') format('truetype');
+		}
+
+		@font-face {
+			font-family: 'Template Gothic Bold';
+			src: url('../../src/fonts/Template\ Gothic\ Bold.ttf') format('truetype');
+		}
+
+		@font-face {
+			font-family: 'CabourgLight Regular';
+			src: url('../../src/fonts/CabourgLight\ Regular.ttf') format('truetype');
+		}
+
+		html {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "MS PGothic", monospace;
+			display: flex;
+			flex-direction: column;
+
+			align-items: center;
+		}
+
+		th {
+			font-family: "Univers Extra Black", monospace;
+		}
+
+		h1 {
+			font-family: "Univers Condensed", monospace;
+		}
+
+		h3 {
+			font-family: "Template Gothic Bold", monospace;
+		}
+	</style>
+
+</head>
+
+<body>
+	<table>
+		<!-- Header -->
+		<tr>
+			<th colspan="2">cwchilvers.io</th>
+		</tr>
+		<tr>
+			<!-- Sidebar -->
+			<td>
+				<!-- Navigation -->
+				<div id="nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/music">Music</a></li>
+						<li><a href="/games">Games</a></li>
+						<li><a href="/archive">Archive</a></li>
+					</ul>
+				</div>
+
+				<!-- Links -->
+				<div id="links">
+					<h3>Links</h3>
+					<ul>
+						<li>
+							<a href="https://github.com/cwchilvers"><img src="./github-button.jpeg" alt="GitHub"></a>
+						</li>
+						<li>
+							<a href="https://chandlerchilvers.bandcamp.com/">
+								<img src="./bandcamp-button.jpeg" alt="Bandcamp">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Contact -->
+				<div id="contact">
+					<h3>Contact</h3>
+					<ul>
+						<li><a href="mailto:cwchilvers@gmail.com">Email</a>
+					</ul>
+				</div>
+
+				<!-- Visitors -->
+				<div id="visitors">
+					<h3>Visitors</h3>
+					<p>0</p>
+				</div>
+
+			</td>
+
+			<!-- Main -->
+			<td>
+				<div id="welcome">
+					<h1>Welcome to cwchilvers.io</h1>
+					<p>This is the main content of the website. Blah, blah, blah...</p>
+				</div>
+				<div id="latest">
+					<h2>Latest</h2>
+					<p>Here is the latest content on the website. Blah, blah, blah...</p>
+				</div>
+
+				<iframe width="314" height="321" scrolling="no"
+					src="https://gifypet.neocities.org/pet/pet.html?name=Bean&dob=1691045325&gender=m&element=Air&pet=cat.gif&map=tree.jpg&background=pink.gif&tablecolor=black&textcolor=black"
+					frameborder="0"></iframe>
+			</td>
+		</tr>
+
+		<!-- Footer -->
+		<tr>
+			<td colspan="2">
+				<p>&copy; 2023 Chandler Chilvers</p>
+			</td>
+		</tr>
+	</table>
+</body>
+
 </html>

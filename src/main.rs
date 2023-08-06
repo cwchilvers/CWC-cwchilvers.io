@@ -2,21 +2,16 @@
 extern crate rocket;
 
 use rocket::routes;
-use routes::index::*;
+use routes::router::*;
 
 mod routes {
-    pub mod index;
+    pub mod router;
 }
 
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-        .mount("/", routes![
-            index, 
-            music,
-            games, 
-            about
-        ])
+        .mount("/", routes![index, music, games, about])
         .mount("/music", routes![film])
-        .register("/", catchers![not_found])
+        .attach(catchers![not_found]) // Corrected 'register' to 'attach'
 }
