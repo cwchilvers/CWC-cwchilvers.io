@@ -7,6 +7,11 @@
 
 	<link rel="stylesheet" href="./reset.css">
 	<style>
+		@font-face {
+			font-family: "Sui Generis";
+			src: url(../../src/fonts/Sui\ Generis.otf);
+		}
+
 		#main {
 			min-height: 100vh;
 		}
@@ -14,7 +19,6 @@
 		tr,
 		th,
 		td {
-			border: 1px solid #ccc;
 			vertical-align: top;
 		}
 
@@ -22,184 +26,241 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			user-select: none;
+		}
+
+		.sidebar-item ul {
+			margin-top: -4px;
+		}
+
+		#site-menu li {
+			padding-left: 6px;
+		}
+
+		#contact {
+			text-align: center;
+		}
+
+		#latest {
+			height: 100%;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+			font-family: "Sui Generis";
+			font-size: 14px;
+		}
+
+		hr {
+			margin: 0 10px;
+		}
+
+		#contact ul {
+			margin-bottom: -10px;
 		}
 	</style>
 
 </head>
 
 <body>
-	<table id="main" width="700px">
+	<table id="main" width="700">
 		<!-- Header -->
-		<tr>
-			<td colspan="2" height="100px">
-				<table height="100px">
-					<!-- Logo -->
-					<td width="500px">
-						<h1>cwchilvers.io</h1>
-					</td>
-
-					<!-- Featured -->
-					<td width="200px">
-						<table width="200px">
-							<tr>
-								<th>Latest Music Work</th>
-							</tr>
-							<tr>
-								<td>
-									<a href="https://open.spotify.com/track/7dIn5DzOgYrwBdQVoqh79o?si=8e506d037a49447d">
-										"Ocean Skies"<br> by Atara Ara<br> (Producer)
-									</a>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</table>
-			</td>
-		</tr>
+		<thead>
+			<tr>
+				<td colspan="2" height="100">
+					<h1>cwchilvers.io</h1>
+				</td>
+				<td colspan="1" width="160">
+					<h3>Latest Music</h3>
+				</td>
+			</tr>
+		</thead>
 
 		<!-- Body -->
-		<tr>
-			<!-- Sidebar -->
-			<td width="120px">
-				<!-- Site Menu -->
-				<table width="120px">
-					<tr height="20px">
-						<th>Site Menu</th>
-					</tr>
-					<tr height="15px">
-						<td><a>Home</a></td>
-					</tr>
-					<tr height="15px">
-						<td><a>Music</a></td>
-					</tr>
-					<tr height="15px">
-						<td><a>Games</a></td>
-					</tr>
-					<tr height="15px">
-						<td><a>Archive</a></td>
-					</tr>
-				</table>
+		<tbody>
+			<tr>
+				<!-- Sidebar -->
+				<th id="sidebar" colspan="1" width="120">
+					<!-- Site Menu -->
+					<div id="site-menu" align="left" class="sidebar-item">
+						<img src=" ./site-menu.gif">
+						<ul style="background-image: url('./sidebar-bg.gif');">
+							<li><a href="/"><img src="sidebar-bullet.gif">Home</a></li>
+							<hr size="0">
+							<li><a href="#"><img src="sidebar-bullet.gif">Music</a></li>
+							<hr size="0">
+							<li><a href="#"><img src="sidebar-bullet.gif">Games</a></li>
+							<hr size="0">
+							<li><a href="#"><img src="sidebar-bullet.gif">Misc.</a></li>
+							<hr size="0">
+							<li><a href="#"><img src="sidebar-bullet.gif">Archive</a></li>
+						</ul>
+					</div>
 
-				<!-- Links -->
-				<table width="120px">
-					<tr height="20px">
-						<th>Links</th>
-					</tr>
-					<tr height="15px">
-						<td>
-							<a href="https://github.com/cwchilvers">
-								<img src="./github-button.jpeg" alt="GitHub">
-							</a>
-						</td>
-					</tr>
-					<tr height="15px">
-						<td>
-							<a href="https://chandlerchilvers.bandcamp.com/">
-								<img src="./bandcamp-button.jpeg" alt="Bandcamp">
-							</a>
-						</td>
-					</tr>
-				</table>
+					<!-- Links -->
+					<div class="sidebar-item">
+						<img src="./links.gif">
+						<ul style="background-image: url('./sidebar-bg.gif');">
+							<li>
+								<a href="https://github.com/cwchilvers">
+									<img src="./github-button.jpeg" alt="GitHub">
+								</a>
+							</li>
+							<li>
+								<a href="https://chandlerchilvers.bandcamp.com/">
+									<img src="./bandcamp-button.jpeg" alt="Bandcamp">
+								</a>
+							</li>
+						</ul>
+					</div>
 
-				<!-- Contact -->
-				<table width="120px">
-					<tr height="20px">
-						<th>Contact</th>
-					</tr>
-					<tr height="15px">
-						<td>
-							<a href="mailto: cwchilvers@gmail.com">
-								<img src="./email-button.jpeg" alt="Email">
-							</a>
-						</td>
-					</tr>
-				</table>
+					<!-- Contact -->
+					<div id="contact" align="left" class="sidebar-item">
+						<img src="./contact.gif">
+						<ul style="background-image: url('./sidebar-bg.gif');">
+							<li>
+								<a href=" mailto:cwchilvers@gmail.com"><img src="mail.gif">E-mail</a>
+							</li>
+						</ul>
+						<img src="./sidebar-bottom.gif">
+					</div>
 
-				<!-- Visitors -->
-				<table width="120px">
-					<tr height="20px">
-						<th>Visitors</th>
-					</tr>
-					<tr height="15px">
-						<td>Today: 0</td>
-					</tr>
-					<tr height="15px">
-						<td>Total: 0</td>
-					</tr>
-				</table>
+					<!-- Visitors -->
+					<div class="sidebar-item">
+						<h3>Visitors</h3>
+						<p>Today: 0</p>
+						<p>Total: 0</p>
+						<img src="globe.gif">
+					</div>
+				</th>
 
-				<!-- Cool Sites -->
-				<table width="120px">
-					<tr height="20px">
-						<th>Cool Sites</th>
-					</tr>
-					<tr height="15px">
-						<td>
-							<a href="">
-								Click me!
-							</a>
-						</td>
-					</tr>
-				</table>
-			</td>
+				<!-- Main -->
+				<td colspan="2">
+					<table>
+						<!-- Main Header -->
+						<tr>
+							<td colspan="2" width="580" height="120">
+								<h2>Welcome</h2>
+								<p>
+									The outdated look of this website is intentional. I wanted to create a site in
+									the style of the mid-2000s, which was when I started getting into the
+									internet. Most of the assets were drawn by myself using Gimp.
+								</p>
+							</td>
+						</tr>
 
-			<!-- Main -->
-			<td>
-				<!-- Home -->
-				<table>
-					<tr height="60px">
-						<th>Home</th>
-					</tr>
-					<tr>
-						<td>
-							<p>
-								askj akldfh lakdjfskdfsjhlk adsjfaksdfhlasdfkdf
-								asdfa daslkdfh slkad fsjhalkdfs jhalsfdkhdfs adskhdfslkf
-							</p>
-						</td>
-					</tr>
-				</table>
+						<!-- Main Body -->
+						<tr>
+							<!-- Latest -->
+							<td>
+								<div id="latest">
+									<h2>Latest</h2>
+									<div class="post">
+										<h3>Post Title</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+											nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+											aute
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+											nulla
+											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+											officia
+											deserunt mollit anim id est laborum.
+										</p>
+									</div>
+									<div class="post">
+										<h3>Post Title</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+											nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+											aute
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+											nulla
+											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+											officia
+											deserunt mollit anim id est laborum.
+										</p>
+									</div>
+									<div class="post">
+										<h3>Post Title</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+											nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+											aute
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+											nulla
+											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+											officia
+											deserunt mollit anim id est laborum.
+										</p>
+									</div>
+									<div class="post">
+										<h3>Post Title</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+											nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+											aute
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+											nulla
+											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+											officia
+											deserunt mollit anim id est laborum.
+										</p>
+									</div>
+								</div>
+							</td>
 
-				<!-- Latest -->
-				<table height="632px">
-					<td>
-						<table width="400px">
-							<tr height="40px">
-								<th>Latest</th>
-							</tr>
-							<tr>
-								<td>
-									<p>
-										askj akldfh lakdjfskdfsjhlk adsjfaksdfhlasdfkdf
-										asdfa daslkdfh slkad fsjhalkdfs jhalsfdkhdfs adskhdfslkf
-									</p>
-								</td>
-							</tr>
-						</table>
+							<!-- Main Sidebar -->
+							<td width="160">
+								<!-- History -->
+								<h3>History</h3>
+								<h4>2023</h4>
+								<ul>
+									<li>2023-08-06</li>
+								</ul>
 
-					</td>
-					<td>
-						<table width="160px">
-							<tr>
-								<th>Latest Music Work</th>
-							</tr>
-							<tr>
-								<td>
-									<a href="https://open.spotify.com/track/7dIn5DzOgYrwBdQVoqh79o?si=8e506d037a49447d">
-										"Ocean Skies"<br> by Atara Ara<br> (Producer)
-									</a>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</table>
-			</td>
-		</tr>
+								<!-- Shoutbox -->
+								<div id="shoutbox">
+									<h3>Shoutbox</h3>
+									<div id="shoutbox-history">
+										<div class="shoutbox-post">
+											<h4>Username YYYY-MM-DD</h4>
+											<p>Shoutbox post.</p>
+										</div>
+									</div>
+									<form action="" method="post">
+										<input type="text" name="username" placeholder="Username"></a>
+										<input type="submit">
+									</form>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
 
 		<!-- Footer -->
-		<tr>
-			<th colspan="2" height="60px">©2023 cwchilvers.io</th>
-		</tr>
+		<tfoot>
+			<tr>
+				<td colspan="3" height="60px">
+					<h3>©2023 cwchilvers.io</h3>
+				</td>
+			</tr>
+		</tfoot>
 	</table>
 </body>
 

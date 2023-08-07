@@ -20,13 +20,13 @@ a,
 p,
 ol,
 ul,
+li,
 button,
 input,
 form,
 table,
 tr,
 th,
-
 td {
     margin: 0;
     padding: 0;
@@ -41,4 +41,8 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+table {
+    border-collapse: collapse
 }
