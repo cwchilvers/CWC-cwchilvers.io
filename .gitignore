@@ -1,5 +1,2 @@
-debug/
-target/
-Cargo.lock
-**/*.rs.bk
-*.pdb
+node_modules/
+package-lock.json
