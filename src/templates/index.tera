@@ -4,96 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>cwchilvers.io</title>
-
-	<link rel="stylesheet" href="./reset.css">
-	<style>
-		@font-face {
-			font-family: "Sui Generis";
-			src: url(../../src/fonts/Sui\ Generis.otf);
-		}
-
-		#main {
-			min-height: 100vh;
-		}
-
-		tr,
-		th,
-		td {
-			vertical-align: top;
-		}
-
-		body {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			user-select: none;
-		}
-
-		.sidebar-item ul {
-			margin-top: -4px;
-		}
-
-		#site-menu ul {
-			padding: 8px 0;
-		}
-
-		#site-menu li {
-			padding-left: 6px;
-			width: 100%;
-		}
-
-		#site-menu li:hover {
-			background-color: #5b646d;
-			padding-left: 7px;
-			cursor: pointer;
-		}
-
-		#contact {
-			text-align: center;
-		}
-
-		#latest {
-			height: 100%;
-		}
-
-		a {
-			text-decoration: none;
-			color: white;
-			font-family: "Sui Generis";
-			font-size: 14px;
-		}
-
-		hr {
-			margin: 0 10px;
-		}
-
-		#contact ul {
-			margin-bottom: -10px;
-		}
-
-		#contact li {
-			padding: 8px 0;
-			width: 100%;
-		}
-
-		#contact li:hover {
-			background-color: #5b646d;
-			cursor: pointer;
-		}
-
-		#links ul {
-			padding: 8px 0;
-		}
-
-		#links ul img {
-			filter: saturate(.75) brightness(.85);
-		}
-
-		#links ul img:hover {
-			filter: saturate(1) brightness(1);
-		}
-	</style>
-
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/components/sidebar.css">
 </head>
 
 <body>
@@ -114,61 +27,62 @@
 		<tbody>
 			<tr>
 				<!-- Sidebar -->
-				<td id="sidebar" colspan="1" width="120">
+				<th id="sidebar" colspan="1" width="120">
 					<!-- Site Menu -->
-					<div id="site-menu" align="left" class="sidebar-item">
-						<img src=" ./site-menu.gif">
-						<ul style="background-image: url('./sidebar-bg.gif');">
-							<li><a href="/"><img src="sidebar-bullet.gif">Home</a></li>
+					<div class="sidebar-item" id="site-menu">
+						<img src=" ../img/sidebar/sidebar-header-site-menu.gif">
+						<ul style="background-image: url('../img/sidebar/sidebar-bg.gif');" alt="Site Menu">
+							<li><a href="/"><img src="../img/sidebar/sidebar-bullet.gif">Home</a></li>
 							<hr size="0">
-							<li><a href="#"><img src="sidebar-bullet.gif">Music</a></li>
+							<li><a href="#"><img src="../img/sidebar/sidebar-bullet.gif">Music</a></li>
 							<hr size="0">
-							<li><a href="#"><img src="sidebar-bullet.gif">Games</a></li>
+							<li><a href="#"><img src="../img/sidebar/sidebar-bullet.gif">Games</a></li>
 							<hr size="0">
-							<li><a href="#"><img src="sidebar-bullet.gif">Misc.</a></li>
+							<li><a href="#"><img src="../img/sidebar/sidebar-bullet.gif">Misc.</a></li>
 							<hr size="0">
-							<li><a href="#"><img src="sidebar-bullet.gif">Archive</a></li>
+							<li><a href="#"><img src="../img/sidebar/sidebar-bullet.gif">Archive</a></li>
 						</ul>
 					</div>
 
 					<!-- Links -->
-					<div id="links" class="sidebar-item" align="center">
-						<img src="./links.gif">
-						<ul style="background-image: url('./sidebar-bg.gif');">
+					<div class="sidebar-item" id="links">
+						<img src="../img/sidebar/sidebar-header-site-menu.gif" alt="Links">
+						<ul style="background-image: url('../img/sidebar/sidebar-bg.gif');">
 							<li>
 								<a href="https://github.com/cwchilvers">
-									<img src="./github-button.jpeg" alt="GitHub">
+									<img src="../img/sidebar/sidebar-link-github.jpeg" alt="GitHub">
 								</a>
 							</li>
 							<li>
 								<a href="https://chandlerchilvers.bandcamp.com/">
-									<img src="./bandcamp-button.jpeg" alt="Bandcamp">
+									<img src="../img/sidebar/sidebar-link-bandcamp.jpeg" alt="Bandcamp">
 								</a>
 							</li>
 						</ul>
 					</div>
 
 					<!-- Contact -->
-					<div id="contact" align="left" class="sidebar-item">
-						<img src="./contact.gif">
-						<ul style="background-image: url('./sidebar-bg.gif');">
+					<div class="sidebar-item" id="contact">
+						<img src="../img/sidebar/sidebar-header-contact.gif" alt=" Contact">
+						<ul style="background-image: url('../img/sidebar/sidebar-bg.gif');">
 							<li>
-								<a href=" mailto:cwchilvers@gmail.com"><img src="mail.gif">E-mail</a>
+								<a href=" mailto:cwchilvers@gmail.com"><img
+										src="../img/sidebar/sidebar-mail.gif">E-mail</a>
 							</li>
 						</ul>
-						<img src="./sidebar-bottom.gif">
+						<img src="../img/sidebar/sidebar-bottom.gif">
 					</div>
 
-					<img src="sidebar-spacer.gif">
+					<img src="../img/sidebar/sidebar-spacer.gif">
 
 					<!-- Visitors -->
 					<div class="sidebar-item">
 						<h3>Visitors</h3>
 						<p>Today: 0</p>
 						<p>Total: 0</p>
-						<img src="globe.gif">
+						<img src="../img/sidebar/sidebar-globe.gif">
 					</div>
-				</td>
+				</th>
 
 				<!-- Main -->
 				<td colspan="2">
@@ -178,9 +92,18 @@
 							<td colspan="2" width="580" height="120">
 								<h2>Welcome</h2>
 								<p>
+									Hi, I'm a musician turned coder. I still create music, but lately I've been shifting
+									more towards the production side of it. I used to score short films, often
+									collaborating on these scores with my brother, but I no longer do that. I studied
+									music with an emphasis on composition along with a handful computer science and game
+									development courses. I also pursued some self-guided learning in Assembly language
+									to explore NES game development, and I dabbled in some basic web development. Just
+									before graduating, I decided to further my software development skills by enrolling
+									in an online course on full-stack web development and pursue a career in that field.
+									<br><br>
 									The outdated look of this website is intentional. I wanted to create a site in
-									the style of the mid-2000s, which was when I started getting into the
-									internet. Most of the assets were drawn by myself using Gimp.
+									the style of the mid-2000s, which was when I started getting into the internet. Most
+									of the assets used were drawn by myself.
 								</p>
 							</td>
 						</tr>

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Sui Generis";
+    src: url(../../fonts/Sui\ Generis.otf);
+}
+
+.sidebar-item ul {
+    margin-top: -4px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: white;
+    font-family: "Sui Generis";
+    font-size: 14px;
+}
+
+#site-menu {
+    text-align: left;
+}
+
+#site-menu li {
+    padding-left: 6px;
+    width: 100%;
+}
+
+
+
+#site-menu ul {
+    padding: 8px 0;
+}
+
+
+#site-menu li:hover {
+    background-color: #5b646d;
+    padding-left: 7px;
+    cursor: pointer;
+}
+
+
+#links ul img {
+    filter: saturate(.75) brightness(.85);
+}
+
+#links ul img:hover {
+    filter: saturate(1) brightness(1);
+}
+
+
+
+
+
+
+
+#contact {
+    text-align: center;
+}
+
+#latest {
+    height: 100%;
+}
+
+
+
+#sidebar hr {
+    margin: 0 10px;
+}
+
+#contact ul {
+    margin-bottom: -10px;
+}
+
+#contact li {
+    padding: 8px 0;
+    width: 100%;
+}
+
+#contact li:hover {
+    background-color: #5b646d;
+    cursor: pointer;
+}
+
+#links ul {
+    padding: 8px 0;
+}
+
+#links ul img {
+    filter: saturate(.75) brightness(.85);
+}
+
+#links ul img:hover {
+    filter: saturate(1) brightness(1);
+}
