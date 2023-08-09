@@ -1,0 +1,34 @@
+<!-- Home Page -->
+<table id="main" width="700">
+    <!-- Header -->
+    {{> header}}
+
+    <!-- Body -->
+    <tbody>
+        <tr>
+            <!-- Sidebar -->
+            {{> sidebar}}
+
+            <!-- Main -->
+            <td colspan="2">
+                <table>
+                    <!-- Main Header -->
+                    {{> home/main-header}}
+
+
+                    <!-- Main Body -->
+                    <tr>
+                        <!-- Latest -->
+                        {{> home/latest}}
+
+                        <!-- Main Sidebar -->
+                        {{> home/main-sidebar}}
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+
+    <!-- Footer -->
+    {{> footer}}
+</table>
