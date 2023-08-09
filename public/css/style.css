@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, a, p, ol, ul, li, button, input, form, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#latest {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Sui Generis";
+  src: url(../../fonts/Sui\ Generis.otf);
+}
+#sidebar a {
+  text-decoration: none;
+  color: white;
+  font-family: "Sui Generis";
+  font-size: 14px;
+}
+#sidebar ul {
+  margin-top: -4px;
+}
+#sidebar li {
+  padding-left: 6px;
+  width: 100%;
+}
+#sidebar hr {
+  margin: 0 10px;
+}
+
+#site-menu li {
+  text-align: left;
+}
+#site-menu li:hover {
+  background-color: #5b646d;
+  padding-left: 7px;
+  cursor: pointer;
+}
+
+#links ul {
+  padding: 8px 0;
+}
+#links ul img {
+  filter: saturate(0.75) brightness(0.85);
+}
+#links ul img:hover {
+  filter: saturate(1) brightness(1);
+}
+
+#contact ul {
+  margin-bottom: -10px;
+}
+#contact li {
+  padding: 8px 0;
+  width: 100%;
+}
+#contact li:hover {
+  background-color: #5b646d;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+#main {
+  min-height: 100vh;
+}
+
+tr, th, td {
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=style.css.map */
