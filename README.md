@@ -3,8 +3,7 @@
 </h1>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Rust-000000.svg?style=for-the-badge&logo=Rust&logoColor=white" alt="Rust">
-    <img src="https://img.shields.io/badge/rocket.rs-8A2BE2?style=for-the-badge&color=rgb(219%2C%2066%2C%2073)" alt="Rocket.rs">
+
 </p>
 
 <h4 align="center">Personal website.</h4>
