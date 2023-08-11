@@ -1,4 +1,5 @@
 const chalk = require('chalk');
+const getIP = require('../client/getIP')
 
 const methodPadding = 8;
 
@@ -7,7 +8,7 @@ function generateRequestId() {
 }
 
 module.exports = {
-    start: (req) => {
+    start: async (req) => {
         const requestId = generateRequestId();
         req.requestId = requestId;
         const methodDisplay = req.method.toUpperCase().padEnd(methodPadding);
@@ -19,7 +20,7 @@ module.exports = {
             chalk.blue("Request for"),
             chalk.white.bold(req.url),
             chalk.blue("from"),
-            chalk.white.bold(req.ip)
+            chalk.white.bold(await getIP(req))
         );
 
         if (Object.keys(req.params).length !== 0) {

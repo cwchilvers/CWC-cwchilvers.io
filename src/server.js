@@ -3,7 +3,6 @@ const logServerStatus = require('./utils/console/logServerStatus');
 const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
-const cors = require('cors');
 const router = require('./routes/router');
 
 const app = express();
@@ -19,7 +18,6 @@ app.use('/api/audio', (req, res, next) => {
     next();
 });
 
-app.use(cors()); 
 
 app
     .engine('hbs', hbs.engine)
