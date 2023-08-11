@@ -1,0 +1,90 @@
+<div id="mini-player">
+    <p class="song-info">Song by Artist</p>
+    <audio id="audio-player"></audio>
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+    <p class="time"></p>
+    <div class="buttons">
+        <button class="play-pause"><img id="play-pause-img" src="/img/mini-player/play.svg"></button>
+        <button class="stop"><img src="/img/mini-player/stop.svg"></button>
+    </div>
+</div>
+
+<script>
+    const audioPlayer = document.getElementById('audio-player');
+    const playPauseButton = document.querySelector('.play-pause');
+    const playPauseImg = document.getElementById('play-pause-img'); // Reference to the play/pause image
+    const stopButton = document.querySelector('.stop');
+    const progressBar = document.querySelector('.progress');
+
+    let songDuration = 0; // Initialize song duration
+
+    audioPlayer.addEventListener('loadedmetadata', () => {
+        songDuration = audioPlayer.duration; // Set the actual song duration
+    });
+
+    let isPlaying = false;
+    let isStopped = true;
+    let currentTime = 0;
+    let interval;
+
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = Math.floor(seconds % 60);
+        const formattedTime = `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        return formattedTime;
+    }
+
+    function updateProgress() {
+        const progressWidth = (currentTime / songDuration) * 100;
+        progressBar.style.width = `${progressWidth}%`;
+
+        const formattedCurrentTime = formatTime(currentTime);
+        const formattedSongDuration = formatTime(songDuration);
+        const timeDisplay = `${formattedCurrentTime} / ${formattedSongDuration}`;
+        document.querySelector('.time').textContent = timeDisplay;
+    }
+
+    function playPause() {
+        if (isPlaying) {
+            audioPlayer.pause();
+            clearInterval(interval);
+            isPlaying = false;
+            playPauseImg.src = '/img/mini-player/play.svg'; // Change image to play.svg
+        } else {
+            if (isStopped) {
+                currentTime = 0;
+                isStopped = false;
+                audioPlayer.src = '/api/audio/Atara Ara - Ocean Skies.mp3'; // Set the audio file path
+            }
+            audioPlayer.play();
+            interval = setInterval(() => {
+                currentTime++;
+                updateProgress();
+                if (currentTime >= songDuration) {
+                    clearInterval(interval);
+                    isPlaying = false;
+                    isStopped = true;
+                    playPauseImg.src = '/img/mini-player/play.svg'; // Change image to play.svg
+                }
+            }, 1000);
+            isPlaying = true;
+            playPauseImg.src = '/img/mini-player/pause.svg'; // Change image to pause.svg
+        }
+    }
+
+    function stop() {
+        audioPlayer.pause();
+        audioPlayer.currentTime = 0;
+        clearInterval(interval);
+        currentTime = 0;
+        isPlaying = false;
+        isStopped = true;
+        playPauseImg.src = '/img/mini-player/play.svg'; // Change image to play.svg
+        updateProgress();
+    }
+
+    playPauseButton.addEventListener('click', playPause);
+    stopButton.addEventListener('click', stop);
+</script>
