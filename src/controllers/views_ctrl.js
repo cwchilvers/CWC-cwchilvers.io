@@ -1,10 +1,9 @@
 const logRequest = require('../utils/console/logRequest')
-
 const getIP = require('../utils/client/getIP');
 
 module.exports = {
     async home(req, res) {
-        logRequest.start(req);
+        logRequest.start(req, await getIP(req));
         const title = 'Home';
         try {
             res.render('pages/home', { title });
