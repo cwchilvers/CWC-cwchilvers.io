@@ -5,7 +5,7 @@ const fs = require('fs');
 const { log } = require('console');
 const audioDirectory = path.join(__dirname, '..', 'audio');
 
-function serveAudio(req, res) {
+async function serveAudio(req, res) {
     logRequest.start(req);
     
     const filename = req.params.filename;
