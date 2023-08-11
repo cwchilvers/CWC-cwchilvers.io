@@ -1,5 +1,5 @@
 require('dotenv').config();
-const consoleLog = require('./utils/misc/consoleLog');
+const logServerStatus = require('./utils/console/logServerStatus');
 const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
@@ -23,4 +23,6 @@ app
     .use(express.static(path.join(__dirname,"../public")))
     .use(router);
 
-app.listen(process.env.PORT, () => consoleLog.success(`Server running on port ${process.env.PORT}...`));
+app.listen(process.env.PORT, process.env.HOST, () => {
+    logServerStatus.success(process.env.HOST, process.env.PORT);
+});

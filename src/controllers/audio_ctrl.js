@@ -1,20 +1,27 @@
+const logRequest = require('../utils/console/logRequest')
+const getIP = require('../utils/client/getIP');
 const path = require('path');
 const fs = require('fs');
+const { log } = require('console');
 const audioDirectory = path.join(__dirname, '..', 'audio');
 
 function serveAudio(req, res) {
+    logRequest.start(req);
+    
     const filename = req.params.filename;
     const audioPath = path.join(audioDirectory, filename);
 
     fs.stat(audioPath, (err, stats) => {
         if (err) {
             res.status(404).send('Audio file not found');
+            logRequest.error(req, 'Audio file not found');
             return;
         }
 
         const range = req.headers.range;
         if (!range) {
             res.status(400).send('Range header is required');
+            logRequest.error(req, 'Range header is required');
             return;
         }
 
@@ -33,6 +40,8 @@ function serveAudio(req, res) {
 
         const stream = fs.createReadStream(audioPath, { start, end });
         stream.pipe(res);
+
+        logRequest.success(req);
     });
 }
 
