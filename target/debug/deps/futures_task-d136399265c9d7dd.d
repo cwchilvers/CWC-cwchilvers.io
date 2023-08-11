@@ -1,0 +1,10 @@
+C:\Users\cwchilvers\Documents\cwchilvers.io\target\debug\deps\futures_task-d136399265c9d7dd.rmeta: C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\lib.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\spawn.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\future_obj.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\noop_waker.rs
+
+C:\Users\cwchilvers\Documents\cwchilvers.io\target\debug\deps\libfutures_task-d136399265c9d7dd.rlib: C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\lib.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\spawn.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\future_obj.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\noop_waker.rs
+
+C:\Users\cwchilvers\Documents\cwchilvers.io\target\debug\deps\futures_task-d136399265c9d7dd.d: C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\lib.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\spawn.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\future_obj.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\noop_waker.rs
+
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\lib.rs:
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\spawn.rs:
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\future_obj.rs:
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-task-0.3.28\src\noop_waker.rs:

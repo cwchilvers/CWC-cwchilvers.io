@@ -1,0 +1,11 @@
+C:\Users\cwchilvers\Documents\cwchilvers.io\target\debug\deps\ubyte-cd7c9c2f1494eb0c.rmeta: C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\lib.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\arithmetic.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\byte_unit.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\parse.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\ser_de.rs
+
+C:\Users\cwchilvers\Documents\cwchilvers.io\target\debug\deps\libubyte-cd7c9c2f1494eb0c.rlib: C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\lib.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\arithmetic.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\byte_unit.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\parse.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\ser_de.rs
+
+C:\Users\cwchilvers\Documents\cwchilvers.io\target\debug\deps\ubyte-cd7c9c2f1494eb0c.d: C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\lib.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\arithmetic.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\byte_unit.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\parse.rs C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\ser_de.rs
+
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\lib.rs:
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\arithmetic.rs:
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\byte_unit.rs:
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\parse.rs:
+C:\Users\cwchilvers\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ubyte-0.10.3\src\ser_de.rs:

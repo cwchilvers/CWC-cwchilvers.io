@@ -1,8 +1,6 @@
 const logRequest = require('../utils/console/logRequest')
-const getIP = require('../utils/client/getIP');
 const path = require('path');
 const fs = require('fs');
-const { log } = require('console');
 const audioDirectory = path.join(__dirname, '..', 'audio');
 
 async function serveAudio(req, res) {
@@ -11,12 +9,8 @@ async function serveAudio(req, res) {
     const filename = req.params.filename;
     const audioPath = path.join(audioDirectory, filename);
 
-    fs.stat(audioPath, (err, stats) => {
-        if (err) {
-            res.status(404).send('Audio file not found');
-            logRequest.error(req, 'Audio file not found');
-            return;
-        }
+    try {
+        const stats = await fs.promises.stat(audioPath);
 
         const range = req.headers.range;
         if (!range) {
@@ -42,8 +36,12 @@ async function serveAudio(req, res) {
         stream.pipe(res);
 
         logRequest.success(req);
-    });
+    } catch (err) {
+        res.status(404).send('Audio file not found');
+        logRequest.error(req, 'Audio file not found');
+    }
 }
+
 
 module.exports = {
     serveAudio,
